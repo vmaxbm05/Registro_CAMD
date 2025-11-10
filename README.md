@@ -35,13 +35,13 @@
 * [ ] Crear módulo “Personas” (listar/agregar/editar/eliminar).
 * [ ] Validar correos y DNI únicos.
 * [ ] Diseño inicial de menú lateral e interfaz base (Inicio – Personas – Ajustes).
-Marcar: verificar si la persona registrada asistió
-personas: Registro de participantes en el evento
-Lista: Muestra las personas que asistieron al evento específicamente de un día
-Ajustes: Nombre del evento, fotos, tamaño de fuente, descripcion del evento, cerrar sesión
-Ayuda: Texto e imágenes explicando el uso de la app
-reportes: Muestra el registro de varios eventos, descargar como pdf o como Excel, imprimir
-usuarios: Separar cuentas de registradores para un evento en especifico, 3 o 4 personas registrarán en un evento, eliminar usuarios
+* Marcar: verificar si la persona registrada asistió
+* personas: Registro de participantes en el evento
+* Lista: Muestra las personas que asistieron al evento específicamente de un día
+* Ajustes: Nombre del evento, fotos, tamaño de fuente, descripcion del evento, cerrar sesión
+* Ayuda: Texto e imágenes explicando el uso de la app
+* reportes: Muestra el registro de varios eventos, descargar como pdf o como Excel, imprimir
+* usuarios: Separar cuentas de registradores para un evento en especifico, 3 o 4 personas registrarán en un evento, eliminar usuarios
 
 ---
 
