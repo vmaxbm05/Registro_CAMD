@@ -84,7 +84,7 @@
             btnAyuda.ForeColor = Color.Gainsboro;
             btnAyuda.Image = (Image)resources.GetObject("btnAyuda.Image");
             btnAyuda.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAyuda.Location = new Point(0, 547);
+            btnAyuda.Location = new Point(0, 434);
             btnAyuda.Name = "btnAyuda";
             btnAyuda.Size = new Size(250, 50);
             btnAyuda.TabIndex = 8;
@@ -102,11 +102,11 @@
             btnCrearUsuario.ForeColor = Color.Gainsboro;
             btnCrearUsuario.Image = (Image)resources.GetObject("btnCrearUsuario.Image");
             btnCrearUsuario.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCrearUsuario.Location = new Point(0, 420);
+            btnCrearUsuario.Location = new Point(0, 579);
             btnCrearUsuario.Name = "btnCrearUsuario";
             btnCrearUsuario.Size = new Size(250, 50);
             btnCrearUsuario.TabIndex = 7;
-            btnCrearUsuario.Text = "Crear usuario";
+            btnCrearUsuario.Text = "Usuarios";
             btnCrearUsuario.UseVisualStyleBackColor = true;
             btnCrearUsuario.Click += btnCrearUsuario_Click;
             // 
@@ -120,7 +120,7 @@
             btnAjustes.ForeColor = Color.Gainsboro;
             btnAjustes.Image = (Image)resources.GetObject("btnAjustes.Image");
             btnAjustes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAjustes.Location = new Point(3, 484);
+            btnAjustes.Location = new Point(0, 351);
             btnAjustes.Name = "btnAjustes";
             btnAjustes.Size = new Size(250, 50);
             btnAjustes.TabIndex = 6;
@@ -138,7 +138,7 @@
             BtnReportes.ForeColor = Color.Gainsboro;
             BtnReportes.Image = (Image)resources.GetObject("BtnReportes.Image");
             BtnReportes.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnReportes.Location = new Point(0, 352);
+            BtnReportes.Location = new Point(1, 511);
             BtnReportes.Name = "BtnReportes";
             BtnReportes.Size = new Size(250, 50);
             BtnReportes.TabIndex = 5;
