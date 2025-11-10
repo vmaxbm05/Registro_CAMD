@@ -77,8 +77,8 @@
             // btnAyuda
             // 
             btnAyuda.FlatAppearance.BorderSize = 0;
-            btnAyuda.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 184, 166);
-            btnAyuda.FlatAppearance.MouseOverBackColor = Color.FromArgb(69, 178, 170);
+            btnAyuda.FlatAppearance.MouseDownBackColor = Color.FromArgb(44, 53, 139);
+            btnAyuda.FlatAppearance.MouseOverBackColor = Color.FromArgb(44, 53, 139);
             btnAyuda.FlatStyle = FlatStyle.Flat;
             btnAyuda.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAyuda.ForeColor = Color.Gainsboro;
@@ -95,8 +95,8 @@
             // btnCrearUsuario
             // 
             btnCrearUsuario.FlatAppearance.BorderSize = 0;
-            btnCrearUsuario.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 184, 166);
-            btnCrearUsuario.FlatAppearance.MouseOverBackColor = Color.FromArgb(69, 178, 170);
+            btnCrearUsuario.FlatAppearance.MouseDownBackColor = Color.FromArgb(44, 53, 139);
+            btnCrearUsuario.FlatAppearance.MouseOverBackColor = Color.FromArgb(44, 53, 139);
             btnCrearUsuario.FlatStyle = FlatStyle.Flat;
             btnCrearUsuario.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCrearUsuario.ForeColor = Color.Gainsboro;
@@ -113,8 +113,8 @@
             // btnAjustes
             // 
             btnAjustes.FlatAppearance.BorderSize = 0;
-            btnAjustes.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 184, 166);
-            btnAjustes.FlatAppearance.MouseOverBackColor = Color.FromArgb(69, 178, 170);
+            btnAjustes.FlatAppearance.MouseDownBackColor = Color.FromArgb(44, 53, 139);
+            btnAjustes.FlatAppearance.MouseOverBackColor = Color.FromArgb(44, 53, 139);
             btnAjustes.FlatStyle = FlatStyle.Flat;
             btnAjustes.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAjustes.ForeColor = Color.Gainsboro;
@@ -131,8 +131,8 @@
             // BtnReportes
             // 
             BtnReportes.FlatAppearance.BorderSize = 0;
-            BtnReportes.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 184, 166);
-            BtnReportes.FlatAppearance.MouseOverBackColor = Color.FromArgb(69, 178, 170);
+            BtnReportes.FlatAppearance.MouseDownBackColor = Color.FromArgb(44, 53, 139);
+            BtnReportes.FlatAppearance.MouseOverBackColor = Color.FromArgb(44, 53, 139);
             BtnReportes.FlatStyle = FlatStyle.Flat;
             BtnReportes.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnReportes.ForeColor = Color.Gainsboro;
@@ -149,8 +149,8 @@
             // BtnLista
             // 
             BtnLista.FlatAppearance.BorderSize = 0;
-            BtnLista.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 184, 166);
-            BtnLista.FlatAppearance.MouseOverBackColor = Color.FromArgb(69, 178, 170);
+            BtnLista.FlatAppearance.MouseDownBackColor = Color.FromArgb(44, 53, 139);
+            BtnLista.FlatAppearance.MouseOverBackColor = Color.FromArgb(44, 53, 139);
             BtnLista.FlatStyle = FlatStyle.Flat;
             BtnLista.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnLista.ForeColor = Color.Gainsboro;
@@ -167,8 +167,8 @@
             // BtnPersonas
             // 
             BtnPersonas.FlatAppearance.BorderSize = 0;
-            BtnPersonas.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 184, 166);
-            BtnPersonas.FlatAppearance.MouseOverBackColor = Color.FromArgb(69, 178, 170);
+            BtnPersonas.FlatAppearance.MouseDownBackColor = Color.FromArgb(44, 53, 139);
+            BtnPersonas.FlatAppearance.MouseOverBackColor = Color.FromArgb(44, 53, 139);
             BtnPersonas.FlatStyle = FlatStyle.Flat;
             BtnPersonas.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnPersonas.ForeColor = Color.Gainsboro;
@@ -185,8 +185,8 @@
             // BtnMarcar
             // 
             BtnMarcar.FlatAppearance.BorderSize = 0;
-            BtnMarcar.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 184, 166);
-            BtnMarcar.FlatAppearance.MouseOverBackColor = Color.FromArgb(69, 178, 170);
+            BtnMarcar.FlatAppearance.MouseDownBackColor = Color.FromArgb(44, 53, 139);
+            BtnMarcar.FlatAppearance.MouseOverBackColor = Color.FromArgb(44, 53, 139);
             BtnMarcar.FlatStyle = FlatStyle.Flat;
             BtnMarcar.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             BtnMarcar.ForeColor = Color.Gainsboro;
@@ -203,8 +203,8 @@
             // btnInicio
             // 
             btnInicio.FlatAppearance.BorderSize = 0;
-            btnInicio.FlatAppearance.MouseDownBackColor = Color.FromArgb(20, 184, 166);
-            btnInicio.FlatAppearance.MouseOverBackColor = Color.FromArgb(69, 178, 170);
+            btnInicio.FlatAppearance.MouseDownBackColor = Color.FromArgb(44, 53, 139);
+            btnInicio.FlatAppearance.MouseOverBackColor = Color.FromArgb(44, 53, 139);
             btnInicio.FlatStyle = FlatStyle.Flat;
             btnInicio.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnInicio.ForeColor = Color.Gainsboro;

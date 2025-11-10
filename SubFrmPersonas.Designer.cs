@@ -29,6 +29,18 @@
         private void InitializeComponent()
         {
             PanelBuscar = new Panel();
+            dataGridView1 = new DataGridView();
+            nombre = new DataGridViewTextBoxColumn();
+            apellidos = new DataGridViewTextBoxColumn();
+            dni = new DataGridViewTextBoxColumn();
+            correo = new DataGridViewTextBoxColumn();
+            telefono = new DataGridViewTextBoxColumn();
+            tipo = new DataGridViewTextBoxColumn();
+            programa = new DataGridViewTextBoxColumn();
+            button4 = new Button();
+            textBox1 = new TextBox();
+            label5 = new Label();
+            label4 = new Label();
             label1 = new Label();
             panel1 = new Panel();
             button3 = new Button();
@@ -49,21 +61,9 @@
             lblDocumento = new Label();
             lblApellidos = new Label();
             lblNombre = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            textBox1 = new TextBox();
-            button4 = new Button();
-            dataGridView1 = new DataGridView();
-            nombre = new DataGridViewTextBoxColumn();
-            apellidos = new DataGridViewTextBoxColumn();
-            dni = new DataGridViewTextBoxColumn();
-            correo = new DataGridViewTextBoxColumn();
-            telefono = new DataGridViewTextBoxColumn();
-            tipo = new DataGridViewTextBoxColumn();
-            programa = new DataGridViewTextBoxColumn();
             PanelBuscar.SuspendLayout();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // PanelBuscar
@@ -80,6 +80,109 @@
             PanelBuscar.Name = "PanelBuscar";
             PanelBuscar.Size = new Size(1282, 603);
             PanelBuscar.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nombre, apellidos, dni, correo, telefono, tipo, programa });
+            dataGridView1.Location = new Point(694, 132);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(564, 401);
+            dataGridView1.TabIndex = 20;
+            // 
+            // nombre
+            // 
+            nombre.HeaderText = "Nombres";
+            nombre.MinimumWidth = 6;
+            nombre.Name = "nombre";
+            nombre.Width = 125;
+            // 
+            // apellidos
+            // 
+            apellidos.HeaderText = "Apellidos";
+            apellidos.MinimumWidth = 6;
+            apellidos.Name = "apellidos";
+            apellidos.Width = 125;
+            // 
+            // dni
+            // 
+            dni.HeaderText = "Documento";
+            dni.MinimumWidth = 6;
+            dni.Name = "dni";
+            dni.Width = 125;
+            // 
+            // correo
+            // 
+            correo.HeaderText = "Correo";
+            correo.MinimumWidth = 6;
+            correo.Name = "correo";
+            correo.Width = 125;
+            // 
+            // telefono
+            // 
+            telefono.HeaderText = "Teléfono";
+            telefono.MinimumWidth = 6;
+            telefono.Name = "telefono";
+            telefono.Width = 125;
+            // 
+            // tipo
+            // 
+            tipo.HeaderText = "Tipo";
+            tipo.MinimumWidth = 6;
+            tipo.Name = "tipo";
+            tipo.Width = 125;
+            // 
+            // programa
+            // 
+            programa.HeaderText = "Programa Académico";
+            programa.MinimumWidth = 6;
+            programa.Name = "programa";
+            programa.Width = 125;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(9, 15, 70);
+            button4.FlatAppearance.BorderColor = Color.Silver;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(156, 156, 156);
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.FromArgb(225, 225, 225);
+            button4.Location = new Point(1136, 71);
+            button4.Name = "button4";
+            button4.Size = new Size(134, 32);
+            button4.TabIndex = 19;
+            button4.Text = "BUSCAR";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(756, 74);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(361, 27);
+            textBox1.TabIndex = 19;
+            // 
+            // label5
+            // 
+            label5.ForeColor = Color.FromArgb(9, 15, 70);
+            label5.Location = new Point(670, 77);
+            label5.Name = "label5";
+            label5.Size = new Size(113, 39);
+            label5.TabIndex = 19;
+            label5.Text = "Buscar:";
+            label5.Click += label5_Click;
+            // 
+            // label4
+            // 
+            label4.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.FromArgb(9, 15, 70);
+            label4.Location = new Point(814, 25);
+            label4.Name = "label4";
+            label4.Size = new Size(326, 50);
+            label4.TabIndex = 19;
+            label4.Text = "BUSQUEDA ";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -301,114 +404,13 @@
             lblNombre.TabIndex = 1;
             lblNombre.Text = "Nombres:";
             // 
-            // label4
-            // 
-            label4.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(9, 15, 70);
-            label4.Location = new Point(814, 25);
-            label4.Name = "label4";
-            label4.Size = new Size(326, 50);
-            label4.TabIndex = 19;
-            label4.Text = "BUSQUEDA ";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            label5.ForeColor = Color.FromArgb(9, 15, 70);
-            label5.Location = new Point(670, 77);
-            label5.Name = "label5";
-            label5.Size = new Size(113, 39);
-            label5.TabIndex = 19;
-            label5.Text = "Buscar:";
-            label5.Click += label5_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(756, 74);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(361, 27);
-            textBox1.TabIndex = 19;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(9, 15, 70);
-            button4.FlatAppearance.BorderColor = Color.Silver;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(156, 156, 156);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.FromArgb(225, 225, 225);
-            button4.Location = new Point(1136, 71);
-            button4.Name = "button4";
-            button4.Size = new Size(134, 32);
-            button4.TabIndex = 19;
-            button4.Text = "BUSCAR";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nombre, apellidos, dni, correo, telefono, tipo, programa });
-            dataGridView1.Location = new Point(694, 132);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(564, 401);
-            dataGridView1.TabIndex = 20;
-            // 
-            // nombre
-            // 
-            nombre.HeaderText = "Nombres";
-            nombre.MinimumWidth = 6;
-            nombre.Name = "nombre";
-            nombre.Width = 125;
-            // 
-            // apellidos
-            // 
-            apellidos.HeaderText = "Apellidos";
-            apellidos.MinimumWidth = 6;
-            apellidos.Name = "apellidos";
-            apellidos.Width = 125;
-            // 
-            // dni
-            // 
-            dni.HeaderText = "Documento";
-            dni.MinimumWidth = 6;
-            dni.Name = "dni";
-            dni.Width = 125;
-            // 
-            // correo
-            // 
-            correo.HeaderText = "Correo";
-            correo.MinimumWidth = 6;
-            correo.Name = "correo";
-            correo.Width = 125;
-            // 
-            // telefono
-            // 
-            telefono.HeaderText = "Teléfono";
-            telefono.MinimumWidth = 6;
-            telefono.Name = "telefono";
-            telefono.Width = 125;
-            // 
-            // tipo
-            // 
-            tipo.HeaderText = "Tipo";
-            tipo.MinimumWidth = 6;
-            tipo.Name = "tipo";
-            tipo.Width = 125;
-            // 
-            // programa
-            // 
-            programa.HeaderText = "Programa Académico";
-            programa.MinimumWidth = 6;
-            programa.Name = "programa";
-            programa.Width = 125;
-            // 
             // SubFrmPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(1282, 603);
+            ControlBox = false;
             Controls.Add(panel1);
             Controls.Add(PanelBuscar);
             Name = "SubFrmPersonas";
@@ -416,9 +418,9 @@
             Load += SubFrmPersonas_Load;
             PanelBuscar.ResumeLayout(false);
             PanelBuscar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
