@@ -32,9 +32,9 @@ namespace pyRegistroAsistencia
             }
             else if (rolUsuario == "Administrador")
             {
-                btnCrearUsuario.Visible = false;
-                BtnReportes.Visible = false;
-                btnAjustes.Visible = false;
+                //btnCrearUsuario.Visible = false;
+                //BtnReportes.Visible = false;
+                //btnAjustes.Visible = false;
             }
         }
 
@@ -83,6 +83,65 @@ namespace pyRegistroAsistencia
         private void PanelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void AbrirFormularioHijo(Form formularioHijo)
+        {
+            // Limpiar el contenido previo
+            if (PanelContenedor.Controls.Count > 0)
+                PanelContenedor.Controls.RemoveAt(0);
+
+            // Configurar el formulario hijo
+            formularioHijo.TopLevel = false;
+            formularioHijo.FormBorderStyle = FormBorderStyle.None;
+            formularioHijo.Dock = DockStyle.Fill;
+
+            // Agregarlo al panel
+            PanelContenedor.Controls.Add(formularioHijo);
+            PanelContenedor.Tag = formularioHijo;
+
+            // Mostrarlo
+            formularioHijo.Show();
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new SubFrmInicio());
+        }
+
+        private void BtnMarcar_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new SubFrmMarcar());
+        }
+
+        private void BtnPersonas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new SubFrmPersonas());
+        }
+
+        private void btnAjustes_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new SubFrmAjustes());
+        }
+
+        private void BtnLista_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new SubFrmLista());
+        }
+
+        private void BtnReportes_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new SubFrmReportes());
+        }
+
+        private void btnCrearUsuario_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new SubFrmCrearUsuario());
+        }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new SubFrmAyuda());
         }
     }
 }

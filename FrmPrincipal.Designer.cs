@@ -84,12 +84,13 @@
             btnAyuda.ForeColor = Color.Gainsboro;
             btnAyuda.Image = (Image)resources.GetObject("btnAyuda.Image");
             btnAyuda.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAyuda.Location = new Point(1, 501);
+            btnAyuda.Location = new Point(0, 547);
             btnAyuda.Name = "btnAyuda";
             btnAyuda.Size = new Size(250, 50);
             btnAyuda.TabIndex = 8;
             btnAyuda.Text = "Ayuda";
             btnAyuda.UseVisualStyleBackColor = true;
+            btnAyuda.Click += btnAyuda_Click;
             // 
             // btnCrearUsuario
             // 
@@ -101,12 +102,13 @@
             btnCrearUsuario.ForeColor = Color.Gainsboro;
             btnCrearUsuario.Image = (Image)resources.GetObject("btnCrearUsuario.Image");
             btnCrearUsuario.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCrearUsuario.Location = new Point(3, 422);
+            btnCrearUsuario.Location = new Point(0, 420);
             btnCrearUsuario.Name = "btnCrearUsuario";
             btnCrearUsuario.Size = new Size(250, 50);
             btnCrearUsuario.TabIndex = 7;
             btnCrearUsuario.Text = "Crear usuario";
             btnCrearUsuario.UseVisualStyleBackColor = true;
+            btnCrearUsuario.Click += btnCrearUsuario_Click;
             // 
             // btnAjustes
             // 
@@ -118,12 +120,13 @@
             btnAjustes.ForeColor = Color.Gainsboro;
             btnAjustes.Image = (Image)resources.GetObject("btnAjustes.Image");
             btnAjustes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAjustes.Location = new Point(0, 352);
+            btnAjustes.Location = new Point(3, 484);
             btnAjustes.Name = "btnAjustes";
             btnAjustes.Size = new Size(250, 50);
             btnAjustes.TabIndex = 6;
             btnAjustes.Text = "Ajustes";
             btnAjustes.UseVisualStyleBackColor = true;
+            btnAjustes.Click += btnAjustes_Click;
             // 
             // BtnReportes
             // 
@@ -141,6 +144,7 @@
             BtnReportes.TabIndex = 5;
             BtnReportes.Text = "Reportes";
             BtnReportes.UseVisualStyleBackColor = true;
+            BtnReportes.Click += BtnReportes_Click;
             // 
             // BtnLista
             // 
@@ -158,6 +162,7 @@
             BtnLista.TabIndex = 4;
             BtnLista.Text = "Lista";
             BtnLista.UseVisualStyleBackColor = true;
+            BtnLista.Click += BtnLista_Click;
             // 
             // BtnPersonas
             // 
@@ -175,6 +180,7 @@
             BtnPersonas.TabIndex = 3;
             BtnPersonas.Text = "Personas";
             BtnPersonas.UseVisualStyleBackColor = true;
+            BtnPersonas.Click += BtnPersonas_Click;
             // 
             // BtnMarcar
             // 
@@ -192,6 +198,7 @@
             BtnMarcar.TabIndex = 2;
             BtnMarcar.Text = "Marcar";
             BtnMarcar.UseVisualStyleBackColor = true;
+            BtnMarcar.Click += BtnMarcar_Click;
             // 
             // btnInicio
             // 
@@ -209,6 +216,7 @@
             btnInicio.TabIndex = 1;
             btnInicio.Text = "Inicio";
             btnInicio.UseVisualStyleBackColor = true;
+            btnInicio.Click += btnInicio_Click;
             // 
             // pictureBox1
             // 

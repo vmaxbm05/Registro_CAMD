@@ -1,6 +1,6 @@
 ﻿namespace pyRegistroAsistencia
 {
-    partial class FrmInicio
+    partial class SubFrmLista
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmInicio";
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(371, 169);
+            label1.Name = "label1";
+            label1.Size = new Size(39, 20);
+            label1.TabIndex = 1;
+            label1.Text = "Lista";
+            // 
+            // SubFrmLista
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Name = "SubFrmLista";
+            Text = "SubFrmLista";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }

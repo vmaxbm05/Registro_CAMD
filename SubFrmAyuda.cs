@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pyRegistroAsistencia
 {
-    public partial class FrmInicio : Form
+    public partial class SubFrmAyuda : Form
     {
-        public FrmInicio()
+        public SubFrmAyuda()
         {
             InitializeComponent();
         }
