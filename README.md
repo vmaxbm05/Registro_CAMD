@@ -35,6 +35,7 @@
 * [ ] Crear módulo “Personas” (listar/agregar/editar/eliminar).
 * [ ] Validar correos y DNI únicos.
 * [ ] Diseño inicial de menú lateral e interfaz base (Inicio – Personas – Ajustes).
+* Inicio: Nombre del evento, foto, descripción del evento, contador de asistentes a tiempor real.
 * Marcar: verificar si la persona registrada asistió
 * personas: Registro de participantes en el evento
 * Lista: Muestra las personas que asistieron al evento específicamente de un día
