@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            PanelBuscar = new Panel();
-            dataGridView1 = new DataGridView();
+            panelContenido = new Panel();
+            panel1 = new Panel();
+            dtgRegistro = new DataGridView();
             nombre = new DataGridViewTextBoxColumn();
             apellidos = new DataGridViewTextBoxColumn();
             dni = new DataGridViewTextBoxColumn();
@@ -40,9 +41,8 @@
             button4 = new Button();
             textBox1 = new TextBox();
             label5 = new Label();
-            label4 = new Label();
-            label1 = new Label();
-            panel1 = new Panel();
+            label6 = new Label();
+            panelRegistro = new Panel();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
@@ -61,35 +61,47 @@
             lblDocumento = new Label();
             lblApellidos = new Label();
             lblNombre = new Label();
-            PanelBuscar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            label4 = new Label();
+            panelContenido.SuspendLayout();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dtgRegistro).BeginInit();
+            panelRegistro.SuspendLayout();
             SuspendLayout();
             // 
-            // PanelBuscar
+            // panelContenido
             // 
-            PanelBuscar.BackColor = Color.FromArgb(225, 225, 225);
-            PanelBuscar.Controls.Add(dataGridView1);
-            PanelBuscar.Controls.Add(button4);
-            PanelBuscar.Controls.Add(textBox1);
-            PanelBuscar.Controls.Add(label5);
-            PanelBuscar.Controls.Add(label4);
-            PanelBuscar.Dock = DockStyle.Fill;
-            PanelBuscar.ForeColor = Color.FromArgb(9, 15, 70);
-            PanelBuscar.Location = new Point(0, 0);
-            PanelBuscar.Name = "PanelBuscar";
-            PanelBuscar.Size = new Size(1282, 603);
-            PanelBuscar.TabIndex = 0;
+            panelContenido.AutoScroll = true;
+            panelContenido.AutoScrollMinSize = new Size(1200, 0);
+            panelContenido.BackColor = Color.FromArgb(225, 225, 225);
+            panelContenido.Controls.Add(panel1);
+            panelContenido.Controls.Add(panelRegistro);
+            panelContenido.Dock = DockStyle.Fill;
+            panelContenido.Location = new Point(0, 0);
+            panelContenido.Name = "panelContenido";
+            panelContenido.Size = new Size(1282, 603);
+            panelContenido.TabIndex = 0;
             // 
-            // dataGridView1
+            // panel1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nombre, apellidos, dni, correo, telefono, tipo, programa });
-            dataGridView1.Location = new Point(694, 132);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(564, 401);
-            dataGridView1.TabIndex = 20;
+            panel1.Controls.Add(dtgRegistro);
+            panel1.Controls.Add(button4);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label6);
+            panel1.Location = new Point(729, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(642, 603);
+            panel1.TabIndex = 1;
+            // 
+            // dtgRegistro
+            // 
+            dtgRegistro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgRegistro.Columns.AddRange(new DataGridViewColumn[] { nombre, apellidos, dni, correo, telefono, tipo, programa });
+            dtgRegistro.Location = new Point(37, 154);
+            dtgRegistro.Name = "dtgRegistro";
+            dtgRegistro.RowHeadersWidth = 51;
+            dtgRegistro.Size = new Size(564, 401);
+            dtgRegistro.TabIndex = 47;
             // 
             // nombre
             // 
@@ -149,79 +161,67 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.FromArgb(225, 225, 225);
-            button4.Location = new Point(1136, 71);
+            button4.Location = new Point(479, 93);
             button4.Name = "button4";
             button4.Size = new Size(134, 32);
-            button4.TabIndex = 19;
+            button4.TabIndex = 43;
             button4.Text = "BUSCAR";
             button4.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(756, 74);
+            textBox1.Location = new Point(106, 96);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(361, 27);
-            textBox1.TabIndex = 19;
+            textBox1.TabIndex = 44;
             // 
             // label5
             // 
             label5.ForeColor = Color.FromArgb(9, 15, 70);
-            label5.Location = new Point(670, 77);
+            label5.Location = new Point(38, 93);
             label5.Name = "label5";
             label5.Size = new Size(113, 39);
-            label5.TabIndex = 19;
+            label5.TabIndex = 45;
             label5.Text = "Buscar:";
-            label5.Click += label5_Click;
+            label5.Click += label5_Click_1;
             // 
-            // label4
+            // label6
             // 
-            label4.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(9, 15, 70);
-            label4.Location = new Point(814, 25);
-            label4.Name = "label4";
-            label4.Size = new Size(326, 50);
-            label4.TabIndex = 19;
-            label4.Text = "BUSQUEDA ";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            label6.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FromArgb(9, 15, 70);
+            label6.Location = new Point(157, 47);
+            label6.Name = "label6";
+            label6.Size = new Size(326, 50);
+            label6.TabIndex = 46;
+            label6.Text = "BUSQUEDA ";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // panelRegistro
             // 
-            label1.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(9, 15, 70);
-            label1.Location = new Point(186, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(326, 50);
-            label1.TabIndex = 0;
-            label1.Text = "REGISTRO DE LAS PERSONAS";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(225, 225, 225);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(btnGuardar);
-            panel1.Controls.Add(cbPrograma);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(txtTelefono);
-            panel1.Controls.Add(txtCorreo);
-            panel1.Controls.Add(txtDNI);
-            panel1.Controls.Add(txtApellido);
-            panel1.Controls.Add(txtNombre);
-            panel1.Controls.Add(cbTipo);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(lblTelefono);
-            panel1.Controls.Add(lblCorreo);
-            panel1.Controls.Add(lblDocumento);
-            panel1.Controls.Add(lblApellidos);
-            panel1.Controls.Add(lblNombre);
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(650, 603);
-            panel1.TabIndex = 1;
+            panelRegistro.Controls.Add(button3);
+            panelRegistro.Controls.Add(button2);
+            panelRegistro.Controls.Add(button1);
+            panelRegistro.Controls.Add(btnGuardar);
+            panelRegistro.Controls.Add(cbPrograma);
+            panelRegistro.Controls.Add(label3);
+            panelRegistro.Controls.Add(txtTelefono);
+            panelRegistro.Controls.Add(txtCorreo);
+            panelRegistro.Controls.Add(txtDNI);
+            panelRegistro.Controls.Add(txtApellido);
+            panelRegistro.Controls.Add(txtNombre);
+            panelRegistro.Controls.Add(cbTipo);
+            panelRegistro.Controls.Add(label2);
+            panelRegistro.Controls.Add(lblTelefono);
+            panelRegistro.Controls.Add(lblCorreo);
+            panelRegistro.Controls.Add(lblDocumento);
+            panelRegistro.Controls.Add(lblApellidos);
+            panelRegistro.Controls.Add(lblNombre);
+            panelRegistro.Controls.Add(label4);
+            panelRegistro.Dock = DockStyle.Left;
+            panelRegistro.Location = new Point(0, 0);
+            panelRegistro.Name = "panelRegistro";
+            panelRegistro.Size = new Size(729, 603);
+            panelRegistro.TabIndex = 0;
             // 
             // button3
             // 
@@ -232,10 +232,10 @@
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.FromArgb(225, 225, 225);
-            button3.Location = new Point(496, 455);
+            button3.Location = new Point(532, 484);
             button3.Name = "button3";
             button3.Size = new Size(134, 32);
-            button3.TabIndex = 18;
+            button3.TabIndex = 56;
             button3.Text = "ELIMINAR";
             button3.UseVisualStyleBackColor = false;
             // 
@@ -248,10 +248,10 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.FromArgb(225, 225, 225);
-            button2.Location = new Point(344, 455);
+            button2.Location = new Point(380, 484);
             button2.Name = "button2";
             button2.Size = new Size(134, 32);
-            button2.TabIndex = 17;
+            button2.TabIndex = 55;
             button2.Text = "ACTUALIZAR";
             button2.UseVisualStyleBackColor = false;
             // 
@@ -264,10 +264,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.FromArgb(225, 225, 225);
-            button1.Location = new Point(186, 455);
+            button1.Location = new Point(222, 484);
             button1.Name = "button1";
             button1.Size = new Size(134, 32);
-            button1.TabIndex = 16;
+            button1.TabIndex = 54;
             button1.Text = "LIMPIAR";
             button1.UseVisualStyleBackColor = false;
             // 
@@ -280,129 +280,139 @@
             btnGuardar.FlatStyle = FlatStyle.Flat;
             btnGuardar.Font = new Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGuardar.ForeColor = Color.FromArgb(225, 225, 225);
-            btnGuardar.Location = new Point(31, 455);
+            btnGuardar.Location = new Point(67, 484);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(134, 32);
-            btnGuardar.TabIndex = 15;
+            btnGuardar.TabIndex = 53;
             btnGuardar.Text = "GUARDAR";
             btnGuardar.UseVisualStyleBackColor = false;
-            btnGuardar.Click += btnGuardar_Click;
             // 
             // cbPrograma
             // 
             cbPrograma.FormattingEnabled = true;
             cbPrograma.Items.AddRange(new object[] { "Pregrado", "Posgrado" });
-            cbPrograma.Location = new Point(456, 347);
+            cbPrograma.Location = new Point(492, 376);
             cbPrograma.Name = "cbPrograma";
             cbPrograma.Size = new Size(165, 28);
-            cbPrograma.TabIndex = 14;
+            cbPrograma.TabIndex = 52;
             // 
             // label3
             // 
             label3.ForeColor = Color.FromArgb(9, 15, 70);
-            label3.Location = new Point(366, 348);
+            label3.Location = new Point(402, 377);
             label3.Name = "label3";
             label3.Size = new Size(113, 39);
-            label3.TabIndex = 13;
+            label3.TabIndex = 51;
             label3.Text = "Programa:";
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new Point(177, 292);
+            txtTelefono.Location = new Point(213, 321);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new Size(361, 27);
-            txtTelefono.TabIndex = 12;
+            txtTelefono.TabIndex = 50;
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(177, 242);
+            txtCorreo.Location = new Point(213, 271);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(361, 27);
-            txtCorreo.TabIndex = 11;
+            txtCorreo.TabIndex = 49;
             // 
             // txtDNI
             // 
-            txtDNI.Location = new Point(177, 193);
+            txtDNI.Location = new Point(213, 222);
             txtDNI.Name = "txtDNI";
             txtDNI.Size = new Size(361, 27);
-            txtDNI.TabIndex = 10;
+            txtDNI.TabIndex = 48;
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(177, 142);
+            txtApellido.Location = new Point(213, 171);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(361, 27);
-            txtApellido.TabIndex = 9;
+            txtApellido.TabIndex = 47;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(177, 89);
+            txtNombre.Location = new Point(213, 118);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(361, 27);
-            txtNombre.TabIndex = 8;
+            txtNombre.TabIndex = 46;
             // 
             // cbTipo
             // 
             cbTipo.FormattingEnabled = true;
             cbTipo.Items.AddRange(new object[] { "Estudiante", "Docente", "Invitado" });
-            cbTipo.Location = new Point(121, 347);
+            cbTipo.Location = new Point(157, 376);
             cbTipo.Name = "cbTipo";
             cbTipo.Size = new Size(179, 28);
-            cbTipo.TabIndex = 7;
+            cbTipo.TabIndex = 45;
             // 
             // label2
             // 
             label2.ForeColor = Color.FromArgb(9, 15, 70);
-            label2.Location = new Point(51, 347);
+            label2.Location = new Point(87, 376);
             label2.Name = "label2";
             label2.Size = new Size(113, 39);
-            label2.TabIndex = 6;
+            label2.TabIndex = 44;
             label2.Text = "Tipo:";
             // 
             // lblTelefono
             // 
             lblTelefono.ForeColor = Color.FromArgb(9, 15, 70);
-            lblTelefono.Location = new Point(72, 295);
+            lblTelefono.Location = new Point(108, 324);
             lblTelefono.Name = "lblTelefono";
             lblTelefono.Size = new Size(113, 39);
-            lblTelefono.TabIndex = 5;
+            lblTelefono.TabIndex = 43;
             lblTelefono.Text = "Teléfono:";
             // 
             // lblCorreo
             // 
             lblCorreo.ForeColor = Color.FromArgb(9, 15, 70);
-            lblCorreo.Location = new Point(72, 244);
+            lblCorreo.Location = new Point(108, 273);
             lblCorreo.Name = "lblCorreo";
             lblCorreo.Size = new Size(113, 39);
-            lblCorreo.TabIndex = 4;
+            lblCorreo.TabIndex = 42;
             lblCorreo.Text = "Correo:";
             // 
             // lblDocumento
             // 
             lblDocumento.ForeColor = Color.FromArgb(9, 15, 70);
-            lblDocumento.Location = new Point(72, 195);
+            lblDocumento.Location = new Point(108, 224);
             lblDocumento.Name = "lblDocumento";
             lblDocumento.Size = new Size(113, 39);
-            lblDocumento.TabIndex = 3;
+            lblDocumento.TabIndex = 41;
             lblDocumento.Text = "Documento:";
             // 
             // lblApellidos
             // 
             lblApellidos.ForeColor = Color.FromArgb(9, 15, 70);
-            lblApellidos.Location = new Point(72, 146);
+            lblApellidos.Location = new Point(108, 175);
             lblApellidos.Name = "lblApellidos";
             lblApellidos.Size = new Size(113, 39);
-            lblApellidos.TabIndex = 2;
+            lblApellidos.TabIndex = 40;
             lblApellidos.Text = "Apellidos:";
             // 
             // lblNombre
             // 
             lblNombre.ForeColor = Color.FromArgb(9, 15, 70);
-            lblNombre.Location = new Point(72, 92);
+            lblNombre.Location = new Point(108, 121);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(113, 39);
-            lblNombre.TabIndex = 1;
+            lblNombre.TabIndex = 39;
             lblNombre.Text = "Nombres:";
+            // 
+            // label4
+            // 
+            label4.Font = new Font("Trebuchet MS", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.FromArgb(9, 15, 70);
+            label4.Location = new Point(222, 54);
+            label4.Name = "label4";
+            label4.Size = new Size(326, 50);
+            label4.TabIndex = 38;
+            label4.Text = "REGISTRO DE LAS PERSONAS";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // SubFrmPersonas
             // 
@@ -411,45 +421,44 @@
             AutoScroll = true;
             ClientSize = new Size(1282, 603);
             ControlBox = false;
-            Controls.Add(panel1);
-            Controls.Add(PanelBuscar);
+            Controls.Add(panelContenido);
             Name = "SubFrmPersonas";
             Text = "SubFrmPersonas";
             Load += SubFrmPersonas_Load;
-            PanelBuscar.ResumeLayout(false);
-            PanelBuscar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panelContenido.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dtgRegistro).EndInit();
+            panelRegistro.ResumeLayout(false);
+            panelRegistro.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel PanelBuscar;
-        private Label label1;
+        private Panel panelContenido;
         private Panel panel1;
-        private Label lblNombre;
-        private Label lblTelefono;
-        private Label lblCorreo;
-        private Label lblDocumento;
-        private Label lblApellidos;
-        private TextBox txtApellido;
-        private TextBox txtNombre;
-        private ComboBox cbTipo;
-        private Label label2;
+        private Panel panelRegistro;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private Button btnGuardar;
+        private ComboBox cbPrograma;
         private Label label3;
         private TextBox txtTelefono;
         private TextBox txtCorreo;
         private TextBox txtDNI;
-        private Button btnGuardar;
-        private ComboBox cbPrograma;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private TextBox txtApellido;
+        private TextBox txtNombre;
+        private ComboBox cbTipo;
+        private Label label2;
+        private Label lblTelefono;
+        private Label lblCorreo;
+        private Label lblDocumento;
+        private Label lblApellidos;
+        private Label lblNombre;
         private Label label4;
-        private Label label5;
-        private DataGridView dataGridView1;
+        private DataGridView dtgRegistro;
         private DataGridViewTextBoxColumn nombre;
         private DataGridViewTextBoxColumn apellidos;
         private DataGridViewTextBoxColumn dni;
@@ -459,5 +468,7 @@
         private DataGridViewTextBoxColumn programa;
         private Button button4;
         private TextBox textBox1;
+        private Label label5;
+        private Label label6;
     }
 }
